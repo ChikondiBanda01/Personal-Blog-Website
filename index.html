@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChikondisDiary</title>
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- js file link  -->
+    <script src="script.js"></script>
+
+    <!-- Unicons iconscout -->
+    <script src="https://kit.fontawesome.com/97f1b7bfe9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Nav Menu  -->
+    <div class="topnav" id="myTopnav">
+        <img src="logo.png" alt="logo">
+        <div class="menu-items">
+            <a href="#intro" class="active">Home</a>
+            <a href="#preamble">About</a>
+            <a href="#blogs">Blog</a>
+            <a href="#subscribe">Subscribe</a>
+            <a class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </ul>
+    </div>
+
+    <!-- Introductory Section  -->
+    <section class="intro" id="intro">
+        <div class="text">
+            <p>Chikondi Banda is a ZCAS  Student,<br><span> transforming the way girls<br>
+                think about University life</span>, one blog post at a time.</p>
+        </div>
+        <div class="image">
+          <img src="profile1.jpeg">
+        </div>
+    </section>
+
+    <!-- Preamble Section  -->
+    <section class="preamble" id="preamble">
+        <h2>Hello, I'm Chikondi - student, foodie, writer and graphic designer</h2>
+        <div class="container">
+            <div class="preamble-image">
+                <img src="preamble.jpeg">
+            </div>
+            <div class="text-container">
+                <div class="intro-text">
+                    <p>Welcome to Chiko's Diary! I am 
+                        thrilled to share my passions for food, faith, and lifestyle with you.
+                        I believe that each of these areas play a significant role in our 
+                        overall well-being and can bring joy, comfort, and meaning to our lives.<br><br>
+                    </p>        
+                    <p class="read-more-text" id="read-more-text">
+                            As a councillor in various spaces during my school years, I have found that 
+                        sharing my insights and experiences with others has been a fulfilling way to 
+                        connect and inspire. Through this blog, I hope to offer you practical tips, 
+                        delicious recipes, thoughtful reflections, and a glimpse into my life.<br><br>Thank 
+                        you for joining me on this journey!
+                    </p>
+                </div>
+                <button class="button" onclick="toggleText()">Show More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section  -->
+    <section class="blogs" id="blogs">
+        <h2 class="heading">On the Blog</h2>
+        <div class="card-container">
+            <a class="card" href="Blog Post.html?image=chicken">
+                <div class="card-body">
+                    <div class="thumbnail">
+                        <img src="chicken2.jpeg" class="thumb-img" alt="">
+                    </div>
+                    <h7>Stir-fry chicken</h7>
+                    <p>Wan't a quick and easy recipe for when you're tired from a day of lectures? 
+                        Stir-fry chicken is one of my favourite go-to recipies!
+                    </p>
+                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 1 day ago</span>
+                </div>
+            </a>
+        
+            <a class="card" href="Blog Post.html?image=study">
+                <div class="card-body">
+                    <div class="thumbnail">
+                        <img src="study.jpeg" class="thumb-img" alt="">
+                    </div>
+                    <h7>Books! Books! Books!</h7>
+                    <p>The only study tip you will ever need <br><br><br><br>
+                    </p>
+                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 7 days ago</span>
+                </div>
+            </a>
+        
+            <a class="card" href="Blog Post.html?image=bible">
+                <div class="card-body">
+                    <div class="thumbnail">
+                        <img src="bible_study.jpeg" class="thumb-img" alt="">
+                    </div>
+                    <h7>Prayer and Perseverance</h7>
+                    <p>When in the face of trouble, it's quite tempting to think that we are meant to
+                        be in control of everything. News flash! That's God's job.<br>
+                    </p>
+                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 2 weeks ago</span>
+                </div>
+            </a>
+        
+            <a class="card" href="Blog Post.html?image=solo">
+                <div class="card-body">
+                    <div class="thumbnail">
+                        <img src="solo (1).jpeg" class="thumb-img" alt="">
+                    </div>
+                    <h7>Solo Dates: Modern Day Medicine</h7>
+                    <p>Dear diary, I used to wonder why I often found it hard to enjoy other people's company, until I realized... <br><br>
+                    </p>
+                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 3 weeks ago</span>
+                </div>
+            </a>
+        </div>
+
+        <button class="button">
+            <a href="blog-list.html">More blog articles</a>
+        </button>
+    </section>
+
+    <!-- Subscribe Section  -->
+    <section class="subscribe" id="subscribe">
+        <div class="container">
+                <img src="pancakes.jpeg">
+            <div class="content">
+                <h3>Subscribe and join me on this exciting journey!</h3>
+                <p>Enter your details below and join an exclusive list of people who recieve
+                    regular tips, inspo, recipes and behind the scenes info that I dont share
+                    anywhere else.
+                </p>
+                <form id="contact-form">
+                    <input type="fname" name="fname" id="fname" placeholder="First Name" required><br>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required><br>
+                    <button class="button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section  -->
+    <div class="social-media">
+    <p>FOLLOW ME</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/accounts/login/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://pin.it/2ECCbua">
+            <i class="fa-brands fa-pinterest"></i>
+        </a>
+        
+    </div>
+    <p>Chikondi Banda</p>
+    </div>
+
+    <!-- Image gallery Section  -->
+    <div class="gallery">
+            <img src="girl1.jpeg" alt="">
+            <img src="pancakes.jpeg" alt="">
+            <img src="vaca1.jpeg" alt="">
+            <img src="girl2.jpeg" alt="">
+            <img src="bible.jpeg" alt="">
+            <img src="logo2.jpeg" alt="">
+        </div>
+    </div>
+
+    <!-- Footer Section  -->
+    <div class="footer">
+        <div class="line"></div>
+
+        <footer>
+            <p>&#169 2023 All Rights Reseved</p>
+            <p>Website by Chikondi Banda</p>
+        </footer>
+    </div>
+</body>
+</html>

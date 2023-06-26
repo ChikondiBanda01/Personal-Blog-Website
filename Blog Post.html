@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- js file link  -->
+    <script src="script.js"></script>
+
+    <!-- Unicons iconscout -->
+    <script src="https://kit.fontawesome.com/97f1b7bfe9.js" crossorigin="anonymous"></script>
+
+    <!-- Image Changer -->
+    <script>
+        //Read query paramente from URL
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name)
+        }
+
+        window.addEventListener('load', function() {
+            const imageType = getQueryParam('image');
+            const img = document.getElementById('page-img');
+            if (imageType === 'chicken') {
+                img.src = 'chicken.jpeg';
+            } else if (imageType === 'study') {
+                img.src = 'study.jpeg';
+            } else if (imageType === 'bible') {
+                img.src = 'bible_study.jpeg';
+            } else if (imageType === 'solo') {
+                img.src = 'solo (1).jpeg';
+            }else if (imageType === 'friends') {
+                img.src = 'friends.jpeg';
+            }else if (imageType === 'pancakes') {
+                img.src = 'pancakes.jpeg';
+            }else if (imageType === 'sleep') {
+                img.src = 'sleep.jpeg';
+            }else if (imageType === 'nshima') {
+                img.src = 'nshima.jpeg';
+            } else {
+                img.src = 'chicken';
+            }
+        })
+    </script>
+
+</head>
+<body>
+    <!-- Nav Menu  -->
+    <div class="topnav" id="myTopnav">
+        <img src="logo.png" alt="logo">
+        <div class="menu-items">
+            <a href="index.html">Home</a>
+        </div>
+        </ul>
+    </div>
+    
+
+    <!-- Picture  -->
+    <div class="page-img">
+        <img src="chicken2.jpeg" alt="" id="page-img">
+    </div>
+
+    <!-- text  -->
+    <div class="page-blog-content">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ratione enim nihil velit quo praesentium quisquam eius repudiandae placeat sint assumenda ea laudantium. Temporibus cum suscipit, consectetur maiores amet eaque?
+        </p>
+        <p>Nam sapiente ipsam a enim laboriosam expedita natus quas magnam inventore quam, saepe quod quos quia voluptatum est veniam non? Animi, alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel perspiciatis at molestias beatae odio doloribus necessitatibus ipsam. Praesentium cum odio rem illum explicabo. Sed eum illo consequatur aspernatur repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at eligendi debitis sed doloremque ipsa, maiores qui odio adipisci, necessitatibus in, soluta officiis totam ullam! Architecto sequi voluptatibus natus tempore.</p>
+        <p>Ab voluptatem a asperiores id nisi veniam, laborum laudantium aperiam cupiditate debitis minus tempore obcaecati similique molestiae quo. Fugit incidunt eligendi eaque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nisi quo unde repudiandae? Iusto iste consequatur deserunt quia quam natus placeat reprehenderit magnam doloremque aperiam sit harum, iure, obcaecati vero.</p>
+    </div>
+
+    <!-- Footer Section  -->
+    <div class="footer">
+        <div class="line"></div>
+
+        <footer>
+            <p>&#169 2023 All Rights Reseved</p>
+            <p>Website by Chikondi Banda</p>
+        </footer>
+    </div>
+
+</body>
+</html>
